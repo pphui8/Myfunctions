@@ -1,0 +1,13 @@
+public static String path = System.getProperty("user.dir") + "\\src\\background";
+    public static HashMap<String, BufferedImage> maps = new HashMap<>();
+    static {
+        File[] files = new File(path).listFiles();
+        assert files != null;
+        for(File file : files) {
+            try {
+                maps.put(file.getName(), ImageIO.read(file));
+            } catch(IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }

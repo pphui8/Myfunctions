@@ -1,0 +1,38 @@
+import javax.imageio.ImageIO;
+import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+
+public class Test {
+    Frame frame = new Frame();
+    BufferedImage image;
+
+    {
+        try {
+            image = ImageIO.read(new File("D:\\TouhouDemo\\src\\background\\bk (1).jpg"));
+        } catch(IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private class MyCanva extends Canvas {
+        @Override
+        public void paint(Graphics g) {
+            g.drawImage(image, 0, 0, 1152, 648, null);
+        }
+    }
+
+    public void init() {
+        MyCanva myCanva = new MyCanva();
+        myCanva.setPreferredSize(new Dimension(192, 108));
+        frame.add(myCanva);
+        frame.setBounds(100, 100, 1152, 648);
+        frame.setVisible(true);
+    }
+
+    public static void main(String[] args) {
+        new Test().init();
+    }
+
+}
