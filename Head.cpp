@@ -11,8 +11,8 @@ typedef __int128_t llint;
 #define endl "\n"
 #define rep(i, n) for (lint(i) = 0; (i) < (n); (i)++)
 #define rep_1(i, n) for (lint(i) = 1; (i) <= (n); (i)++)
-#define yesret() cout<<"Yes"<< endl; return 0;
-#define noret() cout<<"No"<< endl; return 0;
+#define yesret() cout<<"Yes"<<endl; return 0;
+#define noret() cout<<"No"<<endl; return 0;
 #define all(x) x.begin(), x.end()
 #define vec vector<lint>
 const int MAX_N = 3e5 + 5;
