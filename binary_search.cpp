@@ -13,6 +13,7 @@ int main() {
 
     // binary search
     output = upper_bound(all(nums), target) - nums.begin();
+    // output = lower_bound(all(nums), target) - nums.begin();
 
     cout<<output<<endl;
     return 0;
