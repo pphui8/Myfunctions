@@ -14,6 +14,9 @@ set<int> nums;
 // 无序集合（记忆化查找）
 unordered_set<int> found_num;
 
+// 可重复set
+multiset<int> s;
+
 // 最大值先出的数据结构
 // 常用于维护数据结构并快速获取最大或最小值
 priority_queue<int> p_que;
