@@ -11,7 +11,7 @@ list<int> nums;
 // 快速获取最大或最小值效率不如 priority_queue
 set<int> nums;
 
-// 无序集合（记忆化查找）
+// 无序集合, hash表（DP,记忆化查找）
 unordered_set<int> found_num;
 
 // 可重复set
