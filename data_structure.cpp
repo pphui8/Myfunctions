@@ -25,6 +25,7 @@ stack<int> stk;
 queue<int> que;
 
 // 有序映射或有序表
+unordered_map<vector<int>, vector<string>> m;    // faster
 map<char, int> maps = {
     {'I', 1},
     {'V', 5},
