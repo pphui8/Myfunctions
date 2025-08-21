@@ -6,6 +6,10 @@ vector<int> vec;
 
 // 双向链表
 list<int> nums;
+// 双端队列（double-ended queue)
+deque<int> nums;
+
+
 
 // 有序集合，元素不可重复，底层实现默认为红黑树
 // 快速获取最大或最小值效率不如 priority_queue
